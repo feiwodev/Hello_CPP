@@ -18,6 +18,7 @@ namespace NSP_A
 		}
 	};
 
+	// Ç¶Ì×namespace
 	namespace NSP_A_1
 	{
 		class A {

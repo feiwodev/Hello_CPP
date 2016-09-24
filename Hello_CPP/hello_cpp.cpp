@@ -4,10 +4,23 @@
 
 */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <iostream>
+#include <stdio.h>
+
+// 直接引入源码文件 ， 在项目中不建议这样做
+// 这里是为了方便演示 ， 避免写过多的main函数
+// 将一个cpp文件作为整个项目的入口文件
 #include "cpp_namespace.cpp"
 #include "cpp_class_and_struct.cpp"
 #include "cpp_quote.cpp"
+
+// 使用头文件
+#include "Student.h"
+
+// 构造函数示例代码文件
+#include "cpp_construct_function.cpp"
 
 // 标准命名空间 （包含很多标准的定义）
 using namespace std;
@@ -73,6 +86,8 @@ void useCppQuote() {
 
 	q1.x = 100;
 
+	printf("q的内存地址 ： %#x , q1的内存地址：%#x\n", &q, &q1);
+
 	cout << " q == " << q.x << endl;
 
 	int x = 20, y = 40;
@@ -87,6 +102,38 @@ void useCppQuote() {
 	cout << " 指针值交换 ：   x = " << x << "  y = " << y << endl;
 }
 
+/*使用头文件*/
+/*.h头文件里面只需要声明 ， 一个头文件可以有多个实现文件，实现文件中实现类函数
+	需要在函数前面加入 className::这样才能算做是实现类的函数 。
+*/
+void useCPP_H() {
+	Student s;
+	s.setName("zeno");
+	s.setAge(20);
+	s.setWeight(100.5);
+
+	cout << "姓名：" << s.getName() << "  年龄：" << s.getAge() << "  体重：" << s.getWeight() << endl; 
+}
+
+/*构造函数*/
+void useConstructFun() {
+
+	// 实例化一个有参构造函数的对象
+	Product p("iphone6","http://image.xzy.com/iphone6_pic.jpg",5000);
+	p.printInfo();
+
+}
+
+/*拷贝构造函数*/
+void useCopyConstructFun() {
+	Product p1("iphone6", "http://image.xzy.com/iphone6_pic.jpg", 5000);
+
+	Product p2 = p1;
+
+	p2.printInfo();
+	
+}
+
 void main() {
 
 	// out
@@ -99,6 +146,16 @@ void main() {
 	useCppStruct();
 
 	useCppQuote();
+
+	useCPP_H();
+
+	cout << "--------------------------------------------" << endl;
+
+	useConstructFun();
+
+	cout << "--------------------------------------------" << endl;
+
+	useCopyConstructFun();
 
 	system("pause");
 }

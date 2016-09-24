@@ -1,5 +1,7 @@
 ﻿  hello_cpp.cpp
-  cpp_quote.cpp
+c:\users\zeno\documents\visual studio 2015\projects\hello_cpp\hello_cpp\hello_cpp.cpp(89): warning C4477: “printf”: 格式字符串“%#x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“CPP_QUOTE::Quote *”
+c:\users\zeno\documents\visual studio 2015\projects\hello_cpp\hello_cpp\hello_cpp.cpp(89): warning C4477: “printf”: 格式字符串“%#x”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“CPP_QUOTE::Quote *”
+  cpp_construct_function.cpp
   正在生成代码...
-  Hello_CPP.vcxproj -> c:\users\zeno\documents\visual studio 2015\Projects\Hello_CPP\Debug\Hello_CPP.exe
-  Hello_CPP.vcxproj -> c:\users\zeno\documents\visual studio 2015\Projects\Hello_CPP\Debug\Hello_CPP.pdb (Partial PDB)
+  Hello_CPP.vcxproj -> C:\Users\Zeno\documents\visual studio 2015\Projects\Hello_CPP\Debug\Hello_CPP.exe
+  Hello_CPP.vcxproj -> C:\Users\Zeno\documents\visual studio 2015\Projects\Hello_CPP\Debug\Hello_CPP.pdb (Partial PDB)
