@@ -110,10 +110,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cpp_attribute_object.cpp" />
     <ClCompile Include="cpp_quote.cpp" />
     <ClCompile Include="cpp_class_and_struct.cpp" />
     <ClCompile Include="cpp_namespace.cpp" />
     <ClCompile Include="cpp_construct_function.cpp" />
+    <ClCompile Include="cpp_variable_parameter.cpp" />
     <ClCompile Include="hello_cpp.cpp" />
     <ClCompile Include="Student.cpp" />
   </ItemGroup>

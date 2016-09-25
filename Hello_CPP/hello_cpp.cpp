@@ -19,6 +19,12 @@
 // 使用头文件
 #include "Student.h"
 
+// 可变参数
+#include "cpp_variable_parameter.cpp"
+
+// 属性对象
+#include "cpp_attribute_object.cpp"
+
 // 构造函数示例代码文件
 #include "cpp_construct_function.cpp"
 
@@ -134,6 +140,36 @@ void useCopyConstructFun() {
 	
 }
 
+/*函数可变参数*/
+void useVariableParameter() {
+	VariableParameter v;
+	v.variableParams(1, 20,100.2,"湖南");
+}
+
+/*属性对象*/
+void useAttributeObject() {
+	Music m("空白格","杨宗纬");
+	m.printInfo();
+}
+
+/*使用new关键字创建对象*/
+void useNewKeyCreateObject() {
+	// 使用new关键创建对象 ， 则会在堆内存中创建一个空间来存储对象数据
+	// 需要使用delete关键字来回收堆内存中的内存空间 ， 也可以使用free
+	// 使用free则不会出发析构函数
+	Music* m = new Music("决口不提！爱你","郑中基");
+	m->printInfo();
+
+	// 回收为对象开辟的空间
+	delete m;
+
+	// new一个数组
+	int* arr = new int[];
+
+	// 回收数组空间
+	delete[] arr;
+}
+
 void main() {
 
 	// out
@@ -156,6 +192,18 @@ void main() {
 	cout << "--------------------------------------------" << endl;
 
 	useCopyConstructFun();
+
+	cout << "--------------------------------------------" << endl;
+
+	useVariableParameter();
+
+	cout << "--------------------------------------------" << endl;
+
+	useAttributeObject();
+
+	cout << "--------------------------------------------" << endl;
+
+	useNewKeyCreateObject();
 
 	system("pause");
 }

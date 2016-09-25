@@ -33,6 +33,12 @@
     <ClCompile Include="cpp_construct_function.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="cpp_variable_parameter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp_attribute_object.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h">
