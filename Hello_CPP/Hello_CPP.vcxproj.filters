@@ -39,9 +39,51 @@
     <ClCompile Include="cpp_attribute_object.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="cpp_friend_function.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp_operator_overload.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp_inherit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Meat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Chicken.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Fish.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pudding.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp_exceptiondemo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp_template_class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Meat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Chicken.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Fish.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sweetie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pudding.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

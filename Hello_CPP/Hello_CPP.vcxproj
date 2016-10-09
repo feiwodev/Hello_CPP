@@ -110,17 +110,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Chicken.cpp" />
     <ClCompile Include="cpp_attribute_object.cpp" />
+    <ClCompile Include="cpp_exceptiondemo.cpp" />
+    <ClCompile Include="cpp_friend_function.cpp" />
+    <ClCompile Include="cpp_inherit.cpp" />
+    <ClCompile Include="cpp_operator_overload.cpp" />
     <ClCompile Include="cpp_quote.cpp" />
     <ClCompile Include="cpp_class_and_struct.cpp" />
     <ClCompile Include="cpp_namespace.cpp" />
     <ClCompile Include="cpp_construct_function.cpp" />
+    <ClCompile Include="cpp_template_class.cpp" />
     <ClCompile Include="cpp_variable_parameter.cpp" />
+    <ClCompile Include="Fish.cpp" />
     <ClCompile Include="hello_cpp.cpp" />
+    <ClCompile Include="Meat.cpp" />
+    <ClCompile Include="Pudding.cpp" />
     <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Chicken.h" />
+    <ClInclude Include="Fish.h" />
+    <ClInclude Include="Meat.h" />
+    <ClInclude Include="Pudding.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="Sweetie.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
